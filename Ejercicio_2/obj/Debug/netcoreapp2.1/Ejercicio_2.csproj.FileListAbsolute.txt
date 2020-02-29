@@ -30,8 +30,9 @@ E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Deb
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Actualizar_producto.g.cshtml.cs
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Actualizar_proveedor.g.cshtml.cs
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Agregar_producto.g.cshtml.cs
-E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eliminar_producto.g.cshtml.cs
-E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eliminar_proveedor.g.cshtml.cs
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Ver_producto.g.cshtml.cs
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Ver_proveedor.g.cshtml.cs
 E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Agregar_proveedor.g.cshtml.cs
+E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eliminar_producto_yes.g.cshtml.cs
+E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eliminar_proveedor_no.g.cshtml.cs
+E:\ITLA\ITLA\5to cuatri\Programacion III\Tarea 5\Ejercicio_2\Ejercicio_2\obj\Debug\netcoreapp2.1\Razor\Views\Home\Eliminar_proveedor_yes.g.cshtml.cs

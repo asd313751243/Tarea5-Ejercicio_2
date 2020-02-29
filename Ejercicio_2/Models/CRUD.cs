@@ -12,6 +12,7 @@ namespace Ejercicio_2.Models
         public static List<Producto> Productos { get; } = new List<Producto>();
         public static List<Proveedor> Proveedores { get; } = new List<Proveedor>();
 
+        //CRUD para la tabla producto---------------------------------------------------------------------
         public static void agregarProducto (Producto p)
         {
             if(Productos.Count > 0)
@@ -34,6 +35,13 @@ namespace Ejercicio_2.Models
             Productos[id].Id_proveedor = p.Id_proveedor;
         }
 
+        public static void eliminarProducto (int id)
+        {
+            Productos.RemoveAt(id);
+        }
+
+        //CRUD para la tabla proveedor---------------------------------------------------------------------
+
         public static void agregarProveedor(Proveedor p)
         {
             if (Proveedores.Count > 0)
@@ -54,6 +62,26 @@ namespace Ejercicio_2.Models
             Proveedores[id].Direccion_proveedor = p.Direccion_proveedor;
             Proveedores[id].Num_telef_proveedor = p.Num_telef_proveedor;
         }
+
+        public static void eliminarProveedor(int id)
+        {
+            Proveedores.RemoveAt(id);
+        }
+
+        public static bool evaluarParaeliminarProveedor(int id)
+        {
+            bool nope = true;
+            foreach (var item in Productos)
+            {
+                if(id == item.Id_proveedor)
+                {
+                    nope = false;
+
+                }
+            }
+            return nope;
+        }
+
 
     }
 }

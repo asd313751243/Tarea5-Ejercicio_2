@@ -4,7 +4,7 @@
 <h1>Lista_proveedor</h1>
 
 
-<a asp-area="" asp-controller="Home" asp-action="Agregar_proveedor">Agregar</a>
+<a class="btn btn-success" asp-area="" asp-controller="Home" asp-action="Agregar_proveedor">Agregar</a>
 
 <table class="table">
     <thead class="thead-dark">
@@ -24,8 +24,8 @@
                 <td>@proveedor.Nombre_proveedor</td>
                 <td>@proveedor.Direccion_proveedor</td>
                 <td>@proveedor.Num_telef_proveedor</td>
-                <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor" asp-route-id="@proveedor.Id_proveedor">Actualizar</a></td>
-                <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor" asp-route-id="@proveedor.Id_proveedor">Eliminar</a></td>
+                <td><a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor" asp-route-id="@proveedor.Id_proveedor">Actualizar</a></td>
+                <td><a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor_yes" asp-route-id="@proveedor.Id_proveedor">Eliminar</a></td>
             </tr>
         }
 

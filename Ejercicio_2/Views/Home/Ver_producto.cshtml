@@ -3,7 +3,7 @@
 }
 <h1>Lista_producto</h1>
 
-<a asp-area="" asp-controller="Home" asp-action="Agregar_producto">Agregar</a>
+<a class="btn btn-success" asp-area="" asp-controller="Home" asp-action="Agregar_producto">Agregar</a>
 <table class="table">
     <thead class="thead-dark">
         <tr>
@@ -24,8 +24,8 @@
             <td>@producto.Descripcion_producto</td>
             <td>@producto.Fecha_venc_producto</td>
             <td>@producto.Id_proveedor</td>
-            <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_producto" asp-route-id="@producto.Id_producto">Actualizar</a></td>
-            <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_producto" asp-route-id="@producto.Id_producto">Eliminar</a></td>
+            <td><a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Actualizar_producto" asp-route-id="@producto.Id_producto">Actualizar</a></td>
+            <td><a class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Eliminar_producto_yes" asp-route-id="@producto.Id_producto">Eliminar</a></td>
         </tr>
         }
 

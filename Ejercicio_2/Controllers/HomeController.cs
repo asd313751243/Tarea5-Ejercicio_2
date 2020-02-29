@@ -58,8 +58,10 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_producto()
+        public IActionResult Eliminar_producto_yes(int id)
         {
+            CRUD.eliminarProducto(id);
+            ViewBag.ID = id;
             return View();
         }
 
@@ -105,8 +107,26 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_proveedor()
+        public IActionResult Eliminar_proveedor_yes(int id)
         {
+            bool recibir = CRUD.evaluarParaeliminarProveedor(id);
+            if(recibir == false)
+            {
+                return RedirectToAction("Eliminar_proveedor_no", id);
+            }
+            else
+            {
+                CRUD.eliminarProveedor(id);
+                ViewBag.ID = id;
+            }
+
+            return View();
+
+        }
+
+        public IActionResult Eliminar_proveedor_no(int id)
+        {
+            ViewBag.ID = id;
             return View();
         }
 

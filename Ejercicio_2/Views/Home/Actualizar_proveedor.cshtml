@@ -5,22 +5,23 @@
 <h1>Update_proveedor</h1>
 
 <form asp-action="Actualizar_proveedor" method="post">
-    <div class="input-group-prepend">
-        <label>ID</label>
-        <input asp-for="Id_proveedor" type="number" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Id_proveedor" disabled required>
-    </div>
-    <div class="input-group-prepend">
-        <label>Nombre</label>
-        <input asp-for="Nombre_proveedor" type="text" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Nombre_proveedor" required>
-    </div>
-    <div class="input-group-prepend">
-        <label>Direccion</label>
-        <input asp-for="Direccion_proveedor" type="text" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Direccion_proveedor" required>
-    </div>
-    <div class="input-group-prepend">
-        <label>Telefono</label>
-        <input asp-for="Num_telef_proveedor" type="number" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Num_telef_proveedor" required>
-    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label>ID</label>
+            <input asp-for="Id_proveedor" type="number" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Id_proveedor" disabled required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Nombre</label>
+            <input asp-for="Nombre_proveedor" type="text" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Nombre_proveedor" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Direccion</label>
+            <input asp-for="Direccion_proveedor" type="text" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Direccion_proveedor" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Telefono</label>
+            <input asp-for="Num_telef_proveedor" type="number" class="form-control" value="@CRUD.Proveedores[ViewBag.ID].Num_telef_proveedor" required>
+        </div>
     </div>
     <p>
         <input class="btn btn-primary" type="submit" value="Actualizar">
