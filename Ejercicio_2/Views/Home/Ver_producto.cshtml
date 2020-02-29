@@ -5,5 +5,31 @@
 <h1>Lista_producto</h1>
 
 <a asp-area="" asp-controller="Home" asp-action="Agregar_producto">Agregar</a>
-<a asp-area="" asp-controller="Home" asp-action="Actualizar_producto">Actualizar</a>
-<a asp-area="" asp-controller="Home" asp-action="Eliminar_producto">Eliminar</a>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID_Producto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Fecha_Vencimiento</th>
+            <th scope="col">ID_Proveedor</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var producto in CRUD.Productos)
+        {
+        <tr>
+            <th scope="row">@producto.Id_producto</th>
+            <td>@producto.Nombre_producto</td>
+            <td>@producto.Descripcion_producto</td>
+            <td>@producto.Fecha_venc_producto</td>
+            <td>@producto.Id_proveedor</td>
+            <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_producto">Actualizar</a></td>
+            <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_producto">Eliminar</a></td>
+        </tr>
+        }
+
+    </tbody>
+
+</table>

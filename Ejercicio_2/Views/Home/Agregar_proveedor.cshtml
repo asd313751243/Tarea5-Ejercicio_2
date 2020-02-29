@@ -3,3 +3,25 @@
 @{
 }
 <h1>Create_proveedor</h1>
+
+<form asp-action="Agregar_proveedor" method="post">
+    <p class="h2">Introducir los datos</p>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label>Nombre</label>
+            <input asp-for="Nombre_proveedor" type="text" class="form-control" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Direccion</label>
+            <input asp-for="Direccion_proveedor" type="text" class="form-control" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Telefono</label>
+            <input asp-for="Num_telef_proveedor" type="number" class="form-control" required>
+        </div>
+    </div>
+    <p>
+        <input class="btn btn-primary" type="submit" value="Agregar">
+    </p>
+
+</form>

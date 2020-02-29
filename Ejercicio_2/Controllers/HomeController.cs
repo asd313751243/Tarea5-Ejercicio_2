@@ -22,6 +22,18 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Agregar_producto(Producto a)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.agregarProducto(a);
+                return RedirectToAction("Ver_producto");
+            }
+                
+            return View();
+        }
+
 
         public IActionResult Ver_producto()
         {
@@ -46,6 +58,17 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Agregar_proveedor(Proveedor a)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.agregarProveedor(a);
+                return RedirectToAction("Ver_proveedor");
+            }
+
+            return View();
+        }
 
         public IActionResult Ver_proveedor()
         {

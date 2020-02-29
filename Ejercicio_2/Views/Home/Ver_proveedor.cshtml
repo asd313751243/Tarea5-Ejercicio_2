@@ -6,5 +6,32 @@
 
 
 <a asp-area="" asp-controller="Home" asp-action="Agregar_proveedor">Agregar</a>
-<a asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor">Actualizar</a>
-<a asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor">Eliminar</a>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var proveedor in CRUD.Proveedores)
+        {
+            <tr>
+                <th scope="row">@proveedor.Id_proveedor</th>
+                <td>@proveedor.Nombre_proveedor</td>
+                <td>@proveedor.Direccion_proveedor</td>
+                <td>@proveedor.Num_telef_proveedor</td>
+                <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor">Actualizar</a></td>
+                <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor">Eliminar</a></td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
+
+
