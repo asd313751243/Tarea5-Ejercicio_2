@@ -1,5 +1,4 @@
-﻿@model Producto
-
+﻿
 @{
 }
 <h1>Lista_producto</h1>
@@ -25,8 +24,8 @@
             <td>@producto.Descripcion_producto</td>
             <td>@producto.Fecha_venc_producto</td>
             <td>@producto.Id_proveedor</td>
-            <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_producto">Actualizar</a></td>
-            <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_producto">Eliminar</a></td>
+            <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_producto" asp-route-id="@producto.Id_producto">Actualizar</a></td>
+            <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_producto" asp-route-id="@producto.Id_producto">Eliminar</a></td>
         </tr>
         }
 

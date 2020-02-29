@@ -1,5 +1,4 @@
-﻿@model Proveedor
-
+﻿
 @{
 }
 <h1>Lista_proveedor</h1>
@@ -25,8 +24,8 @@
                 <td>@proveedor.Nombre_proveedor</td>
                 <td>@proveedor.Direccion_proveedor</td>
                 <td>@proveedor.Num_telef_proveedor</td>
-                <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor">Actualizar</a></td>
-                <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor">Eliminar</a></td>
+                <td><a asp-area="" asp-controller="Home" asp-action="Actualizar_proveedor" asp-route-id="@proveedor.Id_proveedor">Actualizar</a></td>
+                <td><a asp-area="" asp-controller="Home" asp-action="Eliminar_proveedor" asp-route-id="@proveedor.Id_proveedor">Eliminar</a></td>
             </tr>
         }
 

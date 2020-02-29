@@ -61,7 +61,7 @@ using Ejercicio_2.Models;
             WriteLiteral("\r\n<h1>CRUD para el mini base de dato de dos tabla</h1>\r\n<h2>Ejercicio_2</h2>\r\n");
             EndContext();
             BeginContext(123, 71, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0a980caed954478b159a5b5aca8235d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13f3da81d0724e5da566994731d02357", async() => {
                 BeginContext(175, 15, true);
                 WriteLiteral("Empezar el crud");
                 EndContext();

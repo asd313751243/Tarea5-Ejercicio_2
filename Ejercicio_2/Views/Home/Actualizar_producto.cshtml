@@ -3,3 +3,36 @@
 @{
 }
 <h1>Update_producto</h1>
+
+<form asp-action="Actualizar_producto" method="post">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label>ID</label>
+            <input asp-for="Id_producto" type="number" class="form-control" value="@CRUD.Productos[ViewBag.ID].Id_producto" disabled required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Nombre</label>
+            <input asp-for="Nombre_producto" type="text" class="form-control" value="@CRUD.Productos[ViewBag.ID].Nombre_producto" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Descripcion</label>
+            <input asp-for="Descripcion_producto" type="text" class="form-control" value="@CRUD.Productos[ViewBag.ID].Descripcion_producto" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Fecha_Vencimiento</label>
+            <input asp-for="Fecha_venc_producto" type="date" class="form-control" value="@CRUD.Productos[ViewBag.ID].Fecha_venc_producto" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Proveedor</label>
+            <label asp-for="Id_proveedor" class="control-label"></label>
+            <select asp-for="Id_proveedor" class="form-control">
+                @foreach (var item in CRUD.Proveedores)
+                {
+                    <option value="@item.Id_proveedor">@item.Nombre_proveedor</option>
+                }
+            </select>
+            <span asp-validation-for="Id_proveedor" class="text-danger"></span>
+        </div>
+    </div>
+    <input class="btn btn-primary" type="submit" value="Actualizar">
+</form>

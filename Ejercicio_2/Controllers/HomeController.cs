@@ -40,8 +40,21 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_producto()
+
+        public IActionResult Actualizar_producto(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_producto(Producto a,int id)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.actualizarProducto(a,id);
+                return RedirectToAction("Ver_producto");
+            }
             return View();
         }
 
@@ -75,8 +88,20 @@ namespace Ejercicio_2.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_proveedor()
+        public IActionResult Actualizar_proveedor(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_proveedor(Proveedor a,int id)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.actualizarProveedor(a,id);
+                return RedirectToAction("Ver_proveedor");
+            }
             return View();
         }
 

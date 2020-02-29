@@ -26,6 +26,14 @@ namespace Ejercicio_2.Models
             Productos.Add(p);
         }
 
+        public static void actualizarProducto (Producto p,int id)
+        {
+            Productos[id].Nombre_producto = p.Nombre_producto;
+            Productos[id].Descripcion_producto = p.Descripcion_producto;
+            Productos[id].Fecha_venc_producto = p.Fecha_venc_producto;
+            Productos[id].Id_proveedor = p.Id_proveedor;
+        }
+
         public static void agregarProveedor(Proveedor p)
         {
             if (Proveedores.Count > 0)
@@ -38,6 +46,13 @@ namespace Ejercicio_2.Models
             }
 
             Proveedores.Add(p);
+        }
+
+        public static void actualizarProveedor(Proveedor p,int id)
+        {
+            Proveedores[id].Nombre_proveedor = p.Nombre_proveedor;
+            Proveedores[id].Direccion_proveedor = p.Direccion_proveedor;
+            Proveedores[id].Num_telef_proveedor = p.Num_telef_proveedor;
         }
 
     }
